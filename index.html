@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <a href="#"><img src="img/logo.png" alt="" /></a>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Our Products</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+          <button class="hamburger">
+            <span class="line line-one"></span>
+            <span class="line line-two"></span>
+            <span class="line line-three"></span>
+        </button>
+        
+        </nav>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h1>Doritos</h1>
+          <p>
+            Not just a chip. Doritos gives you the fuel to disrupt and take
+            gaming to Another Level.
+          </p>
+          <a href="#">All Products</a>
+        </div>
+        <div class="image">
+            <img src="img/image4.png" alt="" class="img">
+        </div>
+        <div class="icons">
+            <img src="img/image2.png" onclick= "imgChange(this.src); backgroundChange('cyan')" alt="">
+            <img src="img/image3.png" onclick = "imgChange(this.src); backgroundChange('#FE545E')" alt="">
+            <img src="img/image4.png" onclick = "imgChange(this.src); backgroundChange('white')" alt="">
+            <img src="img/image5.png" onclick = "imgChange(this.src); backgroundChange('cyan')" alt="">
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
