@@ -82,7 +82,7 @@ nav ul li a:hover {
 }
 
 .hamburger.active .line-one {
-  transform: translateY(1rem) rotate(45deg);
+  transform: translateY(.7rem) rotate(45deg);
 }
 
 .hamburger.active .line-two {
@@ -91,7 +91,7 @@ nav ul li a:hover {
 }
 
 .hamburger.active .line-three {
-  transform: translateY(-1rem) rotate(-45deg);
+  transform: translateY(-.7rem) rotate(-45deg);
 }
 
 .content {
@@ -147,7 +147,7 @@ nav ul li a:hover {
 }
 
 .icons {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -183,6 +183,10 @@ nav ul li a:hover {
     display: none;
   }
 
+  header nav a img{
+    width: 3rem;
+  }
+
   header nav ul li {
     display: block;
   }
@@ -201,14 +205,20 @@ nav ul li a:hover {
       display: block;
   }
 
+  .hamburger .line {
+    width: 2rem;
+    height: 3px;
+    margin-block: .5rem;
+  }
+
   .container .content {
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 2rem;
   }
   .content {
     margin: auto;
-    width: 80%;
+    width: 90%;
   }
   .content .text,
   .content .image {
@@ -227,9 +237,26 @@ nav ul li a:hover {
     text-align: center;
   }
   .content .text h1 {
-    font-size: 55px;
+    font-size: 35px;
   }
   .content .text p {
-    font-size: 22px;
+    font-size: 16px;
+  }
+  .content .text a {
+    font-size: 16px;
+    padding: .5rem;
+    letter-spacing: 2px;
+  }
+  .content .image img {
+    width: 100px;
+  }
+  .icons{
+    bottom: 2%;
+  }
+}
+
+@media (min-height: 600px){
+  .container .content{
+    justify-content: center;
   }
 }
